@@ -1,0 +1,13 @@
+<persistence xmlns="http://jakarta.ee/xml/ns/persistence" version="3.0">
+<persistence-unit name="cadastroPU">
+    <class>br.com.filipe.model.Pessoa</class>
+    <properties>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/cadastro"/>
+        <property name="jakarta.persistence.jdbc.user" value="ninja"/>
+        <property name="jakarta.persistence.jdbc.password" value="691901"/>
+        <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+</persistence-unit>
+</persistence>
